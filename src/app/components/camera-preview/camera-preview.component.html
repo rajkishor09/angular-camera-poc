@@ -16,6 +16,7 @@
       </mat-grid-tile>
       <mat-grid-tile>
         <mat-select
+          [disabled]="!cameraSlideToggle.checked"
           placeholder="Camera filters"
           (valueChange)="onFilterChange($event)"
         >
